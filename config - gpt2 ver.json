@@ -1,0 +1,33 @@
+{
+  "data_loader": {
+    "directory": "raw_data",
+    "output_directory": "processed_data",
+    "file_pattern": "industrial_safety.csv",
+    "has_header": true,
+    "column_config": {
+      "with_header": {
+        "question": "question",
+        "choice_1": "choice_1",
+        "choice_2": "choice_2",
+        "choice_3": "choice_3",
+        "choice_4": "choice_4",
+        "answer": "answer"
+      },
+      "no_header": {
+        "question": 0,
+        "choice_1": 1,
+        "choice_2": 2,
+        "choice_3": 3,
+        "choice_4": 4,
+        "answer": 5
+      }
+    },
+    "encoding": "utf-8"
+  },
+  "huggingface_models": {
+    "gpt2_test": {
+      "base_model_id": "gpt2",
+      "adapter_model_id": null
+    }
+  }
+}
