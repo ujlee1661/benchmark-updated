@@ -28,6 +28,23 @@
     "gpt2_test": {
       "base_model_id": "gpt2",
       "adapter_model_id": null
+    },
+    "polyglot_ko_1.3b": {
+      "base_model_id": "EleutherAI/polyglot-ko-1.3b",
+      "adapter_model_id": null
+    },
+    "koalpaca_polyglot_3.8b": {
+      "base_model_id": "beomi/KoAlpaca-Polyglot-3.8B",
+      "adapter_model_id": null
+    },
+    "koalpaca_polyglot_5.8b": {
+      "base_model_id": "beomi/KoAlpaca-Polyglot-5.8B",
+      "adapter_model_id": null
+    },
+    "mistral_7b": {
+      "base_model_id": "mistralai/Mistral-7B-v0.1",
+      "adapter_model_id": null
     }
   }
 }
+

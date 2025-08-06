@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 # 파일 읽기
-df = pd.read_csv(r"C:\Users\82103\OneDrive - UNIST\바탕 화면\safeQnA\jedai\산업안전기사_층화추출_300.csv")
+df = pd.read_csv(r"C:\Users\82103\OneDrive - UNIST\바탕 화면\산업안전기사_층화추출_0804_ver2.1.csv")
 
 # 열 이름 변환 (eval_model.py 필드 + 메타데이터 필드)
 df = df.rename(columns={
@@ -41,8 +41,8 @@ for _, row in df.iterrows():
             "Session": row["Session"],
             "Subject": row["Subject"],
             "Number": row["Number"],
-            "Question_image": row["Question_image"],
-            "법령": row["법령"]
+            "Question_image": row["image"],
+            "법령": row["law"]
         }
     }
     dataset_json.append(entry)
